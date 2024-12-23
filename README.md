@@ -9,6 +9,7 @@ This project is a simple image classification project using the CIFAR10 dataset.
     - Conv2D layers with dilation
     - Depthwise Separable Conv2D layers
 - The model uses ReLU activation function and Batch Normalization after each convolutional layer.
+- Total number of parameters in the model is 111,674.
 
 ```
 ----------------------------------------------------------------
@@ -51,15 +52,15 @@ This project is a simple image classification project using the CIFAR10 dataset.
       BatchNorm2d-35           [-1, 32, 26, 26]              64
              ReLU-36           [-1, 32, 26, 26]               0
            Conv2d-37           [-1, 32, 26, 26]             288
-           Conv2d-38           [-1, 64, 26, 26]           2,048
-DepthwiseSeparableConv-39           [-1, 64, 26, 26]               0
-      BatchNorm2d-40           [-1, 64, 26, 26]             128
-             ReLU-41           [-1, 64, 26, 26]               0
-AdaptiveAvgPool2d-42             [-1, 64, 1, 1]               0
-           Linear-43                   [-1, 10]             650
+           Conv2d-38          [-1, 128, 26, 26]           4,096
+DepthwiseSeparableConv-39          [-1, 128, 26, 26]               0
+      BatchNorm2d-40          [-1, 128, 26, 26]             256
+             ReLU-41          [-1, 128, 26, 26]               0
+AdaptiveAvgPool2d-42            [-1, 128, 1, 1]               0
+           Linear-43                   [-1, 10]           1,290
 ================================================================
-Total params: 108,858
-Trainable params: 108,858
+Total params: 111,674
+Trainable params: 111,674
 Non-trainable params: 0
 ----------------------------------------------------------------
 ```
